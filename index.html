@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>黑马面面</title>
+  </head>
+  <body>
+    <!-- 背景 -->
+    <section class="wrap">
+      <!-- 标题 -->
+      <div class="top">黑马面面</div>
+      <!-- 导航栏 -->
+      <nav>
+        <a href="#">
+          <img src="./images/组 22@2x.png" alt="" />
+          <span>HR面试</span>
+        </a>
+        <a href="#">
+          <img src="./images/组 22@2x.png" alt="" />
+          <span>HR面试</span> </a
+        ><a href="#">
+          <img src="./images/组 22@2x.png" alt="" />
+          <span>HR面试</span> </a
+        ><a href="#">
+          <img src="./images/组 25@2x.png" alt="" />
+          <span>面试技巧</span> </a
+        ><a href="#">
+          <img src="./images/组 25@2x.png" alt="" />
+          <span>面试技巧</span> </a
+        ><a href="#">
+          <img src="./images/组 25@2x.png" alt="" />
+          <span>面试技巧</span>
+        </a>
+      </nav>
+      <!-- go -->
+      <div class="go">
+        <a href="#">
+          <img src="./images/组 21@2x.png" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- 就业指导 -->
+    <section class="content1">
+      <!-- 就业指导更多 -->
+      <div class="content1-hd">
+        <h4>
+          <img src="./images/新手指导.png" alt="" />
+          就业指导
+        </h4>
+        <a href="#">更多>> </a>
+      </div>
+      <!-- 就业指导轮播图 -->
+      <div class="get-job-skill">
+        <div class="swiper-container get-job-fo">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./upload/pic.png" alt="" />
+              <span>老师教你应对面试技巧</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./upload/slide.png" alt="" />
+              <span>李常超现场</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./upload/slide1.png" alt="" />
+              <span>李常超现场</span>
+            </div>
+          </div>
+        </div>
+        <!-- 左右箭头 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- 充电学习 -->
+    <section class="content2">
+      <!-- 充电学习更多 -->
+      <div class="content2-hd">
+        <h4>
+          <img src="./images/i1.png" alt="" />
+          充电学习
+        </h4>
+        <a href="#">更多>> </a>
+      </div>
+      <!-- 充电学习轮播图 -->
+      <div class="study">
+        <div class="swiper-container study-fo">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide" href="javascript:;">
+              <img src="./upload/slide2.jpg" alt="" />
+              <h4>李常超现场超燃，杭州MAOLiveHouse等你来！</h4>
+            </a>
+            <a class="swiper-slide" href="javascript:;">
+              <img src="./upload/slide3.jpg" alt="" />
+              <h4>李常超现场超燃，杭州MAOLiveHouse等你来！</h4>
+            </a>
+            <a class="swiper-slide" href="javascript:;">
+              <img src="./upload/slide4.jpg" alt="" />
+              <h4>李常超现场超燃，杭州MAOLiveHouse等你来！</h4>
+            </a>
+            <a class="swiper-slide" href="javascript:;">
+              <img src="./upload/slide2.jpg" alt="" />
+              <h4>李常超现场超燃，杭州MAOLiveHouse等你来！</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="footer">
+      <a href="javascript:;"><img src="./icons/home.png" alt="" /> <span>首页</span></a>
+      <a href="javascript:;"><img src="./icons/net.png" alt="" /> <span>技术面试</span></a>
+      <a href="javascript:;"><img src="./icons/ms.png" alt="" /> <span>模拟面试</span></a>
+      <a href="javascript:;"><img src="./icons/user.png" alt="" /> <span>我的主页</span></a>
+    </footer>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      (function () {
+        var swiper = new Swiper('.get-job-fo', {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })();
+      (function () {
+        var swiper = new Swiper('.study-fo', {
+          slidesPerView: 2.3,
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      })();
+    </script>
+  </body>
+</html>
